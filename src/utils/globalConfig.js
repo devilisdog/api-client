@@ -85,6 +85,22 @@
     // projectCode: 'ff808081921d021e0192d0e002c81bba', // 项目编码 请求3.3获取
     // projectCompanyCode: 'ff808081921d021e0192d0e002dc1bbc', // 参建单位编码 请求3.5获取
     // teamSysNo: 'ff808081934ce4ce01936ccc5fca4f2b', // 班组编码 请求3.6获取
+
+
+
+    // projectName: '引江补汉工程土建施工及金结机电安装9标',
+    // contractorCorpCode: '9163000022658124XK',
+    // projectCode: 'ff808081921d021e0192d0e002c81bba', // 项目编码 请求3.3获取
+    // projectCompanyCode: 'ff808081921d021e0192d0e002dc1bbc', // 参建单位编码 请求3.5获取
+    // teamSysNo: 'ff808081934ce4ce01936ccc5fca4f2b', // 班组编码 请求3.6获取
+
+
+
+
+
+
+
+
     
     // }
 
