@@ -1,4 +1,8 @@
-# 工程项目信息管理系统
+const fs = require('fs')
+const path = require('path')
+
+// README 内容
+const readmeContent = `# 工程项目信息管理系统
 
 ## 项目简介
 
@@ -23,26 +27,26 @@
 ### 安装步骤
 
 1. 克隆或下载项目代码
-```
+\`\`\`
 git clone <项目仓库地址>
 cd idcard-ocr
-```
+\`\`\`
 
 2. 安装依赖
-```
+\`\`\`
 npm install
-```
+\`\`\`
 
 3. 创建必要的目录和文件
-```
+\`\`\`
 mkdir -p data/input data/output
-```
+\`\`\`
 
 ## 配置说明
 
-1. 在项目根目录下创建 `src/utils/globalConfig.js` 文件，内容如下：
+1. 在项目根目录下创建 \`src/utils/globalConfig.js\` 文件，内容如下：
 
-```
+\`\`\`
 const config = {
     // API配置
     appId: '您的appId',
@@ -57,17 +61,17 @@ const config = {
 }
 
 module.exports = { config }
-```
+\`\`\`
 
 2. 准备数据文件：
-   - 在 `data` 目录下放置 `input.xlsx` 文件，包含工人信息
+   - 在 \`data\` 目录下放置 \`input.xlsx\` 文件，包含工人信息
    - 参考项目中的数据格式要求
 
 ## 使用方法
 
 本项目提供了多种功能方法，可以通过命令行方式调用：
 
-```
+\`\`\`
 # 查看所有可用方法
 node test.js
 
@@ -82,7 +86,7 @@ node test.js uploadSubContractor
 
 # 或者使用npm脚本
 npm run method <方法名>
-```
+\`\`\`
 
 ## 功能方法详细说明
 
@@ -94,9 +98,9 @@ npm run method <方法名>
 **数据要求**：需在 globalConfig.js 中配置 projectName 和 contractorCorpCode。
 
 **运行命令**：
-```
+\`\`\`
 node test.js queryProjectCode
-```
+\`\`\`
 
 **执行结果**：控制台输出项目编码信息。
 
@@ -108,9 +112,9 @@ node test.js queryProjectCode
 **数据要求**：需在 globalConfig.js 中配置 projectCode。
 
 **运行命令**：
-```
+\`\`\`
 node test.js uploadSubContractor
-```
+\`\`\`
 
 **执行结果**：控制台输出参建单位上传结果，包含 projectCompanyCode。
 
@@ -122,9 +126,9 @@ node test.js uploadSubContractor
 **数据要求**：需在 globalConfig.js 中配置 projectCode。
 
 **运行命令**：
-```
+\`\`\`
 node test.js querySubContractor
-```
+\`\`\`
 
 **执行结果**：控制台输出参建单位列表信息。
 
@@ -136,9 +140,9 @@ node test.js querySubContractor
 **数据要求**：需在 globalConfig.js 中配置 projectCode 和 projectCompanyCode。
 
 **运行命令**：
-```
+\`\`\`
 node test.js uploadTeam
-```
+\`\`\`
 
 **执行结果**：控制台输出班组上传结果，包含 teamSysNo。
 
@@ -150,9 +154,9 @@ node test.js uploadTeam
 **数据要求**：需在 globalConfig.js 中配置 projectCode。
 
 **运行命令**：
-```
+\`\`\`
 node test.js queryTeam
-```
+\`\`\`
 
 **执行结果**：控制台输出班组列表信息。
 
@@ -167,9 +171,9 @@ node test.js queryTeam
 - 需在 globalConfig.js 中配置 projectCode
 
 **运行命令**：
-```
+\`\`\`
 node test.js uploadTeamMember
-```
+\`\`\`
 
 **执行结果**：控制台输出每批次上传结果，显示成功/失败信息。
 
@@ -184,9 +188,9 @@ node test.js uploadTeamMember
 - 需在 globalConfig.js 中配置 projectCode、projectCompanyCode 和 teamSysNo
 
 **运行命令**：
-```
+\`\`\`
 node test.js uploadContract
-```
+\`\`\`
 
 **执行结果**：控制台输出每批次上传结果，显示成功/失败信息。
 
@@ -198,9 +202,9 @@ node test.js uploadContract
 **数据要求**：需在 data 目录下放置 input.xlsx 文件，包含工人身份证号码信息。
 
 **运行命令**：
-```
+\`\`\`
 node test.js generateAttendanceData
-```
+\`\`\`
 
 **执行结果**：在 data 目录下生成 output.xlsx 文件，包含生成的考勤数据。
 
@@ -215,9 +219,9 @@ node test.js generateAttendanceData
 - 需在 globalConfig.js 中配置 projectCode 和 teamSysNo
 
 **运行命令**：
-```
+\`\`\`
 node test.js uploadAttendance
-```
+\`\`\`
 
 **执行结果**：控制台输出每批次上传结果，显示成功/失败信息。
 
@@ -229,9 +233,9 @@ node test.js uploadAttendance
 **数据要求**：需在 globalConfig.js 中配置 projectCode 和 teamSysNo。
 
 **运行命令**：
-```
+\`\`\`
 node test.js queryAttendance
-```
+\`\`\`
 
 **执行结果**：控制台输出考勤记录列表。
 
@@ -271,22 +275,28 @@ node test.js queryAttendance
 ## 常见问题
 
 ### 如何查看项目编码？
-使用 `node test.js queryProjectCode` 命令查询项目编码。
+使用 \`node test.js queryProjectCode\` 命令查询项目编码。
 
 ### 如何批量上传人员信息？
-1. 准备好符合格式的 `input.xlsx` 文件
-2. 将文件放在 `data` 目录下
-3. 运行 `node test.js uploadTeamMember` 命令
+1. 准备好符合格式的 \`input.xlsx\` 文件
+2. 将文件放在 \`data\` 目录下
+3. 运行 \`node test.js uploadTeamMember\` 命令
 
 ### 如何生成考勤数据？
-运行 `node test.js generateAttendanceData` 命令，系统会自动生成考勤数据并保存到 `data/output.xlsx` 文件中。
+运行 \`node test.js generateAttendanceData\` 命令，系统会自动生成考勤数据并保存到 \`data/output.xlsx\` 文件中。
 
 ### 请求失败怎么办？
 1. 检查网络连接
 2. 检查配置参数是否正确
-3. 检查 `globalConfig.js` 中的 appId 和 secret 是否有效
+3. 检查 \`globalConfig.js\` 中的 appId 和 secret 是否有效
 4. 查看控制台输出的错误信息进行排查
 
 ## 技术支持
 
 如有问题，请联系项目管理员或提交 issue。
+`
+
+// 写入README.md文件
+fs.writeFileSync(path.join(__dirname, 'README.md'), readmeContent, 'utf8')
+
+console.log('README.md 文件已成功生成！')

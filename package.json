@@ -1,0 +1,19 @@
+{
+    "name": "idcard-ocr",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "method": "node test.js",
+        "generate-readme": "node generateReadme.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.9",
+        "xlsx": "^0.18.5"
+    }
+}
