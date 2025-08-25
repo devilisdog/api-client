@@ -15,10 +15,10 @@
 /**
  * 襄阳生产
  */
-// const config = {
-//     secret: '09684ef4a4ad4b1d9556ae2c61da89aa',
-//     appId: '6dc4f6c7431e444f8e7bd55e8e4892ab',
-//     originUrl: 'http://119.36.80.41:7004',
+const config = {
+    secret: '09684ef4a4ad4b1d9556ae2c61da89aa',
+    appId: '6dc4f6c7431e444f8e7bd55e8e4892ab',
+    originUrl: 'http://119.36.80.41:7004',
 
 
 
@@ -67,11 +67,11 @@
 
 
 
-    // projectName: '中铁十二局集团有限公司引江补汉工程土建施工及金结机电安装6标',
-    // contractorCorpCode: '911400001100711840',
-    // projectCode: 'ff80808195029e100195b10674b65431', // 项目编码 请求3.3获取
-    // projectCompanyCode: 'ff80808195029e100195b106835d5433', // 参建单位编码 请求3.5获取
-    // teamSysNo: 'ff808081971c8cb2019742e7a94e373c', // 班组编码 请求3.6获取
+    projectName: '中铁十二局集团有限公司引江补汉工程土建施工及金结机电安装6标',
+    contractorCorpCode: '911400001100711840',
+    projectCode: 'ff80808195029e100195b10674b65431', // 项目编码 请求3.3获取
+    projectCompanyCode: 'ff80808195029e100195b106835d5433', // 参建单位编码 请求3.5获取
+    teamSysNo: 'ff808081971c8cb2019742e7a94e373c', // 班组编码 请求3.6获取
 
 
 
@@ -105,7 +105,7 @@
 
 
     
-    // }
+    }
 
 
 
