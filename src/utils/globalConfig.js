@@ -199,7 +199,11 @@
 
 
 
-
+// projectName: '中铁大桥局集团有限公司新建合武高铁湖北段HWZQ-4标项目经理部',//合武铁路，程伟生
+// contractorCorpCode: '91420100177685789E',
+// projectCode: '000000008ed19cc2018f510631ba1dd1', // 项目编码 请求3.3获取
+// projectCompanyCode: '000000008ed19cc2018f5106326f1dd3', // 参建单位编码 请求3.5获取
+// teamSysNo: '000000008ed19cc8018f510e4c1232db', // 班组编码 请求3.6获取
 
 
 
