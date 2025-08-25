@@ -15,10 +15,10 @@
 /**
  * 襄阳生产
  */
-const config = {
-    secret: '09684ef4a4ad4b1d9556ae2c61da89aa',
-    appId: '6dc4f6c7431e444f8e7bd55e8e4892ab',
-    originUrl: 'http://119.36.80.41:7004',
+// const config = {
+//     secret: '09684ef4a4ad4b1d9556ae2c61da89aa',
+//     appId: '6dc4f6c7431e444f8e7bd55e8e4892ab',
+//     originUrl: 'http://119.36.80.41:7004',
 
 
 
@@ -36,6 +36,15 @@ const config = {
     // projectCode: 'ff80808191e087a201921c8a9ae05b71', // 项目编码 请求3.3获取
     // projectCompanyCode: 'ff80808191e087a201921c8a9af55b73', // 参建单位编码 请求3.5获取
     // teamSysNo: 'ff808081921d021e0192db6898082705', // 班组编码 请求3.6获取
+
+
+
+
+    // projectName: '468省道保康寺坪至马桥改建工程二标段',//保康路桥
+    // contractorCorpCode: '9142060074179344XM',
+    // projectCode: 'ff808081971c8cb20197aa56cc9c0f54', // 项目编码 请求3.3获取
+    // projectCompanyCode: 'ff808081971c8cb20197aa56ce5d0f56', // 参建单位编码 请求3.5获取
+    // teamSysNo: 'ff808081971c8cb20197aa5b8cac0f5a', // 班组编码 请求3.6获取
 
 
 
@@ -67,11 +76,11 @@ const config = {
 
 
 
-    projectName: '中铁十二局集团有限公司引江补汉工程土建施工及金结机电安装6标',
-    contractorCorpCode: '911400001100711840',
-    projectCode: 'ff80808195029e100195b10674b65431', // 项目编码 请求3.3获取
-    projectCompanyCode: 'ff80808195029e100195b106835d5433', // 参建单位编码 请求3.5获取
-    teamSysNo: 'ff808081971c8cb2019742e7a94e373c', // 班组编码 请求3.6获取
+    // projectName: '中铁十二局集团有限公司引江补汉工程土建施工及金结机电安装6标',
+    // contractorCorpCode: '911400001100711840',
+    // projectCode: 'ff80808195029e100195b10674b65431', // 项目编码 请求3.3获取
+    // projectCompanyCode: 'ff80808195029e100195b106835d5433', // 参建单位编码 请求3.5获取
+    // teamSysNo: 'ff808081971c8cb2019742e7a94e373c', // 班组编码 请求3.6获取
 
 
 
@@ -105,7 +114,7 @@ const config = {
 
 
     
-    }
+    // }
 
 
 
@@ -169,6 +178,9 @@ const config = {
 // projectCompanyCode: '0000000095029c4a019564a1cf5d4850', // 参建单位编码 请求3.5获取
 // teamSysNo: 'ff80808195029c6601958f3740f274f5', // 班组编码 请求3.6获取
 
+
+
+
 // projectName: '武汉市轨道交通12号线工程PPP项目部分土建工程及轨道工程2标Ⅲ工区',
 // contractorCorpCode: '91610000220522345A',
 // projectCode: '0000000090a1d4d70190fd941a63455f', // 项目编码 请求3.3获取
@@ -178,7 +190,11 @@ const config = {
 
 
 
-
+// projectName: '沙湖公园世界花园大会永久展区项目',//黄磊客户，沙湖花园大会
+// contractorCorpCode: '91420112MA49RGH52C',
+// projectCode: '0000000097d4e16c019832567fc73e35', // 项目编码 请求3.3获取
+// projectCompanyCode: '0000000097d4e16c0198325680333e37', // 参建单位编码 请求3.5获取
+// teamSysNo: '0000000097d4e18b0198325a285d45da', // 班组编码 请求3.6获取
 
 
 
@@ -188,6 +204,12 @@ const config = {
 
 
 // }
+
+
+
+
+
+
 
 module.exports = {
     config,
