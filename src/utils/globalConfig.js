@@ -172,7 +172,7 @@
  * projectName 项目名称
  * contractorCorpCode 总包单位统一信用代码
  */
-// projectName: '武汉关泵站及配套市政工程设计施工总承包',
+// projectName: '武汉关泵站及配套市政工程设计施工总承包',//刘洋
 // contractorCorpCode: '91420116MA4K25W354',
 // projectCode: '0000000095029c4a019564a1cf1b484e', // 项目编码 请求3.3获取
 // projectCompanyCode: '0000000095029c4a019564a1cf5d4850', // 参建单位编码 请求3.5获取
